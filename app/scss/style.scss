@@ -1,1 +1,98 @@
 @import '../../node_modules/normalize.css/normalize';
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+//header start
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  min-height: 740px;
+  position: relative;
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 1380px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header__menu {
+  @include f800;
+  text-transform: uppercase;
+
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    background-color: transparent;
+    padding: 15px 20px;
+    cursor: pointer;
+
+    &+.header__menu-item {
+      margin-left: 14px;
+    }
+
+    &:hover {
+      background-color: $yellow;
+      padding: 15px 20px;
+      border-radius: 25px;
+
+      a {
+        color: #000;
+      }
+
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.header__text {
+  text-align: center;
+  @include f800;
+  margin-top: 58px;
+}
+
+.header__book {
+  font-size: 36px;
+  color: $yellow;
+  margin-bottom: 22px;
+  @include f800;
+}
+
+.header__phone {
+  display: block;
+  color: #fff;
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+.header__mail {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 15px;
+}
+
+.header__auto-img {
+  position: absolute;
+  bottom: -50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+//header end

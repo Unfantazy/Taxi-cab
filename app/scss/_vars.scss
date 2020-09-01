@@ -1,0 +1,12 @@
+$yellow: #ffc61a;
+$main: #101010;
+
+@mixin f800 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+
+@mixin f400 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
