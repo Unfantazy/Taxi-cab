@@ -31,8 +31,10 @@
   @include f800;
   text-transform: uppercase;
 
+
   &-list {
     display: flex;
+
   }
 
   &-item {
@@ -93,6 +95,10 @@
   bottom: -50%;
   transform: translate(-50%, -50%);
   left: 50%;
+}
+
+.animate__animated.animate__fadeInLeftBig {
+  animation-delay: .5s;
 }
 
 //header end
