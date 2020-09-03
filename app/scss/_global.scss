@@ -50,3 +50,18 @@ body {
   padding: 0px 15px;
   margin: 0 auto;
 }
+
+.title {
+  @include f800;
+  color: $main;
+  font-size: 44px;
+  text-transform: uppercase;
+
+
+  span {
+    color: $yellow;
+    display: block;
+    font-size: 35px;
+  }
+
+}
