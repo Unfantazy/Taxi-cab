@@ -676,6 +676,78 @@
       top: -8px;
     }
   }
+
+  .footer__apple {
+    padding-right: 93px;
+    position: relative;
+
+    &::after {
+      content: "\f179";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 137px;
+      color: #fff;
+      font-size: 30px;
+      top: -8px;
+    }
+  }
+}
+
+.footer__contact {
+  a {
+    display: block;
+    color: #fff;
+    padding-left: 44px;
+    position: relative;
+
+    &:before {
+      content: "";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+      font-size: 24px;
+    }
+  }
+
+  a+a {
+    margin-top: 23px;
+  }
+
+  .footer__address {
+    &:before {
+      content: "\f041";
+    }
+  }
+
+  .footer__tel {
+    &:before {
+      content: "\f10b";
+      top: -4px;
+    }
+
+  }
+
+  .footer__mail {
+    &:before {
+      content: "\f003";
+      font-size: 15px;
+    }
+  }
+
+  .footer__site {
+    &:before {
+      content: "\f245";
+      font-size: 17px;
+    }
+  }
+}
+
+.footer__copyright {
+  min-height: 50px;
+  line-height: 51px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
 }
 
 //footer end
