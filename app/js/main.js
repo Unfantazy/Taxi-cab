@@ -5,4 +5,9 @@ $(function () {
   //   slidesToScroll: 2,
   // });
 
+  $('.burger__menu').on('click', function () {
+    $('.header__menu').toggleClass('active');
+  });
+
+
 });
